@@ -1,0 +1,452 @@
+body {
+    font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.71429;
+    font-weight: 400;
+    color: #9a9a9a;
+    background-color: #554141;
+    -webkit-text-size-adjust: none;
+    -webkit-font-smoothing: subpixel-antialiased;
+}
+
+.profile {
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+}
+
+.dashboard {
+    padding: 0px 20px 20px 20px;
+    background: #fff;
+    border-radius: 8px;
+    width: 100%;
+}
+
+@media screen and (max-width: 1400px) {
+    .container>.profile>.profilePicture {
+        width: 25% !important;
+    }
+    .personalInfo_div>.contactMe>.infoo {
+        padding: 15px 0px !important;
+    }
+    /*.form-input {
+        padding: 0px 0px !important;
+    }*/
+    textarea.form-input {
+        height: 85px !important;
+    }
+    .form-corporate {
+        padding: 25px 19px !important;
+        border-radius: 4% !important;
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    .profilePicture {
+        width: 30% !important;
+    }
+}
+
+.profilePicture {
+    width: 15%;
+    overflow: hidden;
+}
+
+.info {
+    width: 30%;
+    overflow: hidden;
+    margin-top: 50px;
+    margin-left: 10px;
+}
+
+.social {
+    width: 50%;
+    overflow: hidden;
+    text-align: right;
+    margin-top: 12px;
+}
+
+.cv {
+    width: 25%;
+    overflow: hidden;
+}
+
+.social>ul>li,
+.cv {
+    display: inline-block;
+    vertical-align: middle;
+    white-space: normal;
+    margin-top: 60px;
+    margin-right: 16px;
+    size: 50px;
+}
+
+.profile-divider {
+    border-bottom-color: rgba(255, 255, 255, 0.16);
+    background: #1087eb;
+    width: 100%;
+    height: 1px;
+    margin-top: 10px;
+}
+
+.heading {
+    font-size: 15px;
+    line-height: 1.2;
+    letter-spacing: .1em;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.personalInfo_div,
+.personalInfo_div>.personalInfo>.professionalSkill>.proskill {
+    width: 100%;
+}
+
+.personalInfo {
+    width: 60%;
+    overflow: hidden;
+}
+
+.personalInfo_div>.contactMe {
+    width: 40%;
+    overflow: hidden;
+    padding-left: 30px;
+}
+
+.personalInfo_div>.personalInfo>.professionalSkill>.proskill>.pskill-1,
+.personalInfo_div>.personalInfo>.professionalSkill>.proskill>.pskill-2 {
+    width: 80%;
+}
+
+.progress-linear-title {
+    font-size: 15px;
+    font-weight: 500;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+}
+
+
+/*TimelIne*/
+
+.timeline {
+    display: table;
+}
+
+.timeline p {
+    letter-spacing: .025em;
+    font-size: 13px;
+}
+
+.timeline-period {
+    padding-right: 20px;
+    white-space: nowrap;
+    letter-spacing: .070em;
+}
+
+.timeline-title {
+    position: relative;
+    padding-left: 35px;
+    font-size: 15px;
+}
+
+.timeline {
+    display: table;
+}
+
+.timeline-main {
+    position: relative;
+    padding: 10px 0 30px 20px;
+}
+
+.timeline-main::before,
+.timeline-main::after {
+    content: '';
+    position: absolute;
+    pointer-events: none;
+}
+
+.timeline-item {
+    display: table-row;
+}
+
+.timeline-item>* {
+    display: table-cell;
+}
+
+.timeline-main {
+    padding-bottom: 0px;
+}
+
+.timeline-main *+p {
+    margin-top: 10px;
+}
+
+.timeline-title::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: .65em;
+    display: inline-block;
+    width: 25px;
+    height: 2px;
+    vertical-align: middle;
+    background: #1087eb;
+}
+
+.timeline-main::before {
+    left: 0;
+    top: 0;
+    bottom: 0;
+    border-left: 1px solid #554141;
+}
+
+.timeline-main::after {
+    top: 18px;
+    left: -4px;
+    width: 9px;
+    height: 9px;
+    background: #3a2c2c;
+    border-radius: 50%;
+}
+
+.timeline-item:last-child .timeline-main::before {
+    bottom: 20px;
+}
+
+.timeline-main::before,
+.timeline-main::after {
+    content: '';
+    position: absolute;
+    pointer-events: none;
+}
+
+
+/*Form */
+
+.form-wrap {
+    position: relative;
+    margin-top: 20px;
+}
+
+.form-corporate {
+    padding: 30px 20px;
+    margin-top: 20px;
+    background: #efefef;
+    border-radius: 5%;
+}
+
+.form-wrap-inner {
+    position: relative;
+}
+
+.form-wrap-icon .icon {
+    position: absolute;
+    z-index: 10;
+    top: 13px;
+    left: 24px;
+    color: #151515;
+    line-height: 24px;
+}
+
+.form-wrap-icon .icon:not(.icon-custom-sizing) {
+    font-size: 14px;
+}
+
+.form-wrap-icon .form-label,
+.form-wrap-icon .form-input,
+.form-wrap-icon .select2-container--default .select2-selection--single .select2-selection__rendered {
+    padding-left: 57px;
+}
+
+.has-error .form-input,
+.has-error .select2-container--default .select2-selection--single {
+    border-color: #eb6a6a;
+}
+
+.has-focus .form-input,
+.has-focus .select2-container--default .select2-selection--single {
+    border-color: #1087eb;
+}
+
+.form-wrap+* {
+    margin-top: 15px;
+}
+
+.rd-form .form-wrap+.row {
+    margin-top: 30px;
+}
+
+.form-input {
+    display: block;
+    width: 100%;
+    min-height: 50px;
+    padding: 12px 26px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #151515;
+    background-color: #ffffff;
+    background-image: none;
+    border-radius: 0;
+    -webkit-appearance: none;
+    transition: .3s ease-in-out;
+    border: 1px solid #e0e0e0;
+}
+
+.form-input:focus {
+    outline: 0;
+}
+
+textarea.form-input {
+    height: 175px;
+    min-height: 50px;
+    max-height: 298px;
+    resize: vertical;
+}
+
+.form-label,
+.form-label-outside {
+    margin-bottom: 0;
+    color: #9a9a9a;
+    font-weight: 400;
+}
+
+.form-label {
+    position: absolute;
+    top: 13px;
+    left: 0;
+    right: 0;
+    padding-left: 26px;
+    padding-right: 26px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #151515;
+    pointer-events: none;
+    text-align: left;
+    z-index: 9;
+    transition: .25s;
+    will-change: transform;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.form-label.focus {
+    opacity: 0;
+}
+
+.form-label.auto-fill {
+    color: #151515;
+}
+
+.form-label-outside {
+    display: inline-block;
+    margin-bottom: 6px;
+    letter-spacing: .025em;
+    color: #151515;
+    cursor: pointer;
+}
+
+@media (min-width: 768px) {
+    .form-label-outside {
+        position: static;
+    }
+    .form-label-outside,
+    .form-label-outside.focus,
+    .form-label-outside.auto-fill {
+        transform: none;
+    }
+}
+
+.form-label-outside+.form-wrap-inner .form-label,
+.form-label-outside+.form-wrap-inner .form-input,
+.form-label-outside+.form-wrap-inner .select2-selection--single .select2-selection__rendered {
+    color: #9a9a9a;
+}
+
+[data-x-mode='true'] .form-label {
+    pointer-events: auto;
+}
+
+.form-validation {
+    position: absolute;
+    right: 8px;
+    top: 0;
+    z-index: 11;
+    margin-top: 2px;
+    font-size: 9px;
+    font-weight: 400;
+    line-height: 12px;
+    letter-spacing: 0;
+    color: #eb6a6a;
+    transition: .3s;
+}
+
+.form-validation-left .form-validation {
+    top: 100%;
+    right: auto;
+    left: 0;
+}
+
+#form-output-global {
+    position: fixed;
+    bottom: 30px;
+    left: 15px;
+    z-index: 2000;
+    visibility: hidden;
+    transform: translate3d(-500px, 0, 0);
+    transition: .3s all ease;
+}
+
+#form-output-global.active {
+    visibility: visible;
+    transform: translate3d(0, 0, 0);
+}
+
+.form-output {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 1.2;
+    margin-top: 2px;
+    transition: .3s;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.form-output.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.form-output.error {
+    color: #eb6a6a;
+}
+
+.form-output.success {
+    color: #98bf44;
+}
+
+
+/* Employee Profile*/
+
+.personalInfo_div>.contactMe>.infoo {
+    padding: 30px 20px;
+    margin-top: 20px;
+    background: #efefef;
+    border-radius: 5%;
+}
+
+.personalInfo_div>.contactMe>.infoo>ul>li {
+    /* display: inline-block; */
+    width: 100%;
+    padding: 10px 15px;
+    color: #000000;
+    font-size: 18px;
+    list-style: none;
+}

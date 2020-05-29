@@ -1,0 +1,355 @@
+body {
+    background: #f0f3fa none repeat scroll 0 0;
+    color: #6b739c;
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 26px;
+    overflow-wrap: break-word;
+    word-break: normal;
+}
+
+.col-lg-9 {
+    max-width: 100%;
+}
+
+.candidate-profile {
+    background: #fff none repeat scroll 0 0;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.single-resume-feild.resume-avatar {
+    margin-bottom: 18px;
+}
+
+.resume-image {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+    display: block;
+    position: relative;
+    /*border: .1px solid green;*/
+    border-radius: 20%;
+}
+
+.resume-image img {
+    max-width: 150px;
+    max-height: 150px;
+    border-radius: 20%;
+}
+
+img {
+    max-width: 150px;
+    max-height: 150px;
+    height: auto;
+}
+
+.resume-avatar-hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.44);
+    text-align: center;
+    padding: 30% 0;
+    -webkit-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+    /*visibility: hidden;*/
+    opacity: 0;
+    /*-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";*/
+}
+
+.resume-avatar-upload {
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+    padding: 7px 18px;
+    background: #25AD60 none repeat scroll 0 0;
+    border-radius: 4px;
+    margin: 20px 0;
+}
+
+*,
+*::before,
+*::after {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.resume-avatar-upload p {
+    text-transform: capitalize;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.resume-avatar-upload p i {
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.resume-avatar-upload>input[type="file"] {
+    cursor: pointer;
+    height: 100%;
+    left: 0;
+    opacity: 0;
+    /*-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";*/
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+form {
+    display: block;
+    margin-top: 0em;
+}
+
+.candidate-profile .resume-box h3 {
+    font-size: 21px;
+}
+
+.feild-flex-2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.single-input {
+    display: flex;
+}
+
+.single-resume-feild.feild-flex-2 .single-input:first-child {
+    margin-right: 15px;
+    margin-left: 0;
+}
+
+.single-resume-feild.feild-flex-2>.single-input {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -ms-grid-row-align: center;
+    align-items: center;
+    text-align: left;
+    margin-right: 15px;
+}
+
+.single-resume-feild>.single-input {
+    text-align: left;
+    margin-right: 0;
+    margin-bottom: 15px;
+}
+
+.single-input label {
+    color: #333;
+    text-transform: capitalize;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+}
+
+label {
+    display: inline-block;
+    margin-bottom: 0.5rem;
+}
+
+*,
+*::before,
+*::after {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.single-resume-feild.feild-flex-2 .single-input:last-child {
+    margin-right: 0;
+    margin-left: 15px;
+}
+
+.single-resume-feild.feild-flex-2>.single-input {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -ms-grid-row-align: center;
+    align-items: center;
+    text-align: left;
+    margin-right: 15px;
+}
+
+.single-resume-feild>.single-input {
+    text-align: left;
+    margin-right: 0;
+    margin-bottom: 14px;
+}
+
+.single-input label {
+    color: #333;
+    text-transform: capitalize;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+}
+
+label {
+    display: inline-block;
+    margin-bottom: 0.5rem;
+}
+
+.single-input input {
+    display: block;
+    width: 70%;
+    border: 2px solid #e8ecec;
+    padding: 7px 10px;
+    border-radius: 5px;
+    color: #000000;
+}
+
+button,
+input {
+    overflow: visible;
+}
+
+.single-resume-feild>.single-input {
+    text-align: left;
+    margin-right: 0;
+    margin-bottom: 14px;
+}
+
+.single-input label {
+    color: #333;
+    text-transform: capitalize;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    width: 25%;
+}
+
+label {
+    display: inline-block;
+    margin-bottom: 0.5rem;
+}
+
+.single-input select {
+    display: block;
+    width: 70%;
+    border: 2px solid #e8ecec;
+    padding: 7px 10px;
+    border-radius: 5px;
+    text-transform: capitalize;
+    color: #777;
+}
+
+.single-resume-feild>.single-input {
+    text-align: left;
+    margin-right: 0;
+    margin-bottom: 5px;
+}
+
+.single-input textarea {
+    display: block;
+    width: 172%;
+    border: 2px solid #e8ecec;
+    padding: 7px 10px;
+    border-radius: 5px;
+    height: 120px;
+    color: #666;
+}
+
+textarea {
+    overflow: auto;
+    resize: vertical;
+}
+
+.candidate-profile .resume-box h3 {
+    font-size: 18px;
+    margin-top: 15px;
+}
+
+.resume-box h3 {
+    font-size: 24px;
+    text-transform: capitalize;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #eee;
+}
+
+
+/* The message box is shown when the user clicks on the password field */
+
+#message {
+    display: none;
+    background: #f1f1f1;
+    color: #000;
+    position: relative;
+    padding: 0px;
+    margin-top: 10px;
+}
+
+#message p {
+    padding: 0px 36px;
+    font-size: 16px;
+    margin-bottom: 1px;
+}
+
+
+/* Add a green text color and a checkmark when the requirements are right */
+
+.valid {
+    color: green;
+}
+
+.valid:before {
+    position: relative;
+    left: -35px;
+    content: "✔";
+}
+
+
+/* Add a red text color and an "x" when the requirements are wrong */
+
+.invalid {
+    color: red;
+}
+
+.invalid:before {
+    position: relative;
+    left: -35px;
+    content: "✖";
+}
+
+.overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+    background: rgba(255, 255, 255, 0.7);
+}
+
+.overlay-content {
+    position: absolute;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    top: 50%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    color: #555;
+}
+
+.uploadProcess img {
+    max-width: 207px;
+    border: none;
+    box-shadow: none;
+    /*-webkit-border-radius: 0;*/
+    display: inline;
+}
